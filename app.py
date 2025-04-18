@@ -124,9 +124,9 @@ def show_recommend():
         st.session_state.page = 'home'
         st.session_state.movie_page = 0
         # No forced rerun here
-
-similarity = load('similarity.joblib')
 movies = load('movie_list.joblib')
+similarity = load('similarity.joblib')
+#movies = load('movie_list.joblib')
 if 'page' not in st.session_state:
     st.session_state.page = 'home'
 if 'movie_page' not in st.session_state:
